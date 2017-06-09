@@ -14,34 +14,139 @@
         <header id="banner" class="body">
                 <h1><a href="/">The Cache </a></h1>
                 <nav><ul>
-                    <li><a href="/category/personal.html">personal</a></li>
+                    <li><a href="/category/blog.html">blog</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="/the-beginning.html">The Beginning</a></h1>
+                    <h1 class="entry-title"><a href="/a-comparison-between-patient-management-systems-at-ntuh-and-nckuh.html">A comparison between patient management systems at NTUH and NCKUH</a></h1>
 <footer class="post-info">
-        <abbr class="published" title="2017-04-26T14:20:00+08:00">
-                Published: Wed 26 April 2017
+        <abbr class="published" title="2017-06-06T00:55:00+08:00">
+                Published: Tue 06 June 2017
         </abbr>
 
         <address class="vcard author">
                 By                         <a class="url fn" href="/author/chang-yi-yen.html">Chang-Yi Yen</a>
         </address>
-<p>In <a href="/category/personal.html">personal</a>.</p>
-<p>tags: <a href="/tag/introduction.html">introduction</a> </p>
-</footer><!-- /.post-info --><p>Hey there. I'm a medical student from Taiwan, soon about to graduate and get
-licensed. I program as a hobby on an amateur level. I mainly work in Python,
-but I have a basic understanding of Perl, shell script, and C. I use a mix of
-GNU/Linux and FreeBSD as a part of daily life.</p>
-<p>I can be contacted in the following ways:</p>
-<ul>
-<li>email: changyiyen AT gmail.com</li>
-<li>XMPP: devnull AT xmpp.is</li>
-<li>Twitter: @ChangYiYen</li>
-</ul>                </article>
+<p>In <a href="/category/blog.html">blog</a>.</p>
+<p>tags: <a href="/tag/medical.html">medical</a> <a href="/tag/it.html">IT</a> </p>
+</footer><!-- /.post-info --><p>In May 2017 I was fortunate enough to spend the entire month at the General Medicine department at National Taiwan University Hospital. I wanted to see for myself what the hospital at the most prestigious university in Taiwan had to offer.</p>
+<p>Besides the inter-hospital culture shock, the thing that struck me most was how different the patient management system was from the one I had become familiar with while serving as an intern at National Cheng Kung University. I admit that there must be many aspects of these systems that I do not know about, but I will attempt to list the differences between the systems and their respective pros and cons.</p>
+<p>This table is by no means complete; feel free to let me know what I missed.</p>
+<table>
+  <th colspan=3><h2>Comparison between patient management systems at NTUH and NCKUH</h2></th>
+  <tr> 
+    <th colspan=3> Technical aspects </th>
+  </tr>
+  <tr>
+    <td></td>
+    <td style="font-weight: bold">NTUH</td>
+    <td style="font-weight: bold">NCKUH</td>
+  </tr>
+  <tr>
+    <td style="font-style: italic">Type</td>
+    <td>Web application</td>
+    <td>Microsoft ClickOnce application</td>
+  </tr>
+  <tr>
+    <td style="font-style: italic">Platform</td>
+    <td>Cross-platform</td>
+    <td>Microsoft Windows</td>
+  </tr>
+  <tr>
+    <td style="font-style: italic">Execution speed</td>
+    <td>fast</td>
+    <td>medium to fast</td>
+  </tr>
+  <tr>
+    <th colspan=3> Workflow </th>
+  </tr>
+  <tr>
+    <td style="font-style: italic">Integration with other services</td>
+    <td>Inpatient system integrated with surgery, ER, outpatient systems into unified portal page; selectable using radio button set upon login</td>
+    <td>Inpatient system integrated with surgery system; segregated from ER and outpatient systems</td>
+  </tr>
+  <tr>
+    <td style="font-style: italic">Patient listing</th>
+    <td colspan=2>Listing by ward location, primary care physician, etc.</td>
+  </tr>
+  <tr>
+    <td style="font-style: italic">Color coding</td>
+    <td>Background color change to indicate missing note</td>
+    <td>Color coding to indicate patient gender</td>
+  </tr>
+  <tr>
+    <td style="font-style: italic">Patient privacy</td>
+    <td>Text appended to patient name to indicate patient does not wish to be searchable</td>
+    <td>Patient name replaced with chart number</td>
+  </tr>
+  <tr>
+    <td style="font-style: italic">Patient admission notes</td>
+    <td>More detailed; includes herbal drug use, education of present parties, nutritional plan, etc.; no template file for review of systems and physical examination</td>
+    <td>Template files for physical examination present and loadable from each account; standardized review of systems list</td>
+  </tr>
+  <tr>
+    <th colspan=3> Patient order system </th>
+  </tr>
+  <tr>
+    <td style="font-style: italic">Overview</td>
+    <td>Systems for medication orders, nutrition orders and diagnostic orders are segregated; miscellaneous orders grouped with diagnostic orders</td>
+    <td>Medication, nutrition, diagnostic and miscellaneous orders are color coded and all grouped in one page; new orders are highlighted</td>
+  </tr>
+  <tr>
+    <td style="font-style: italic">Order times</td>
+    <td>Hour precision</td>
+    <td>Second precision</td>
+  </tr>
+  <tr>
+    <td style="font-style: italic">IV fluids</td>
+    <td>Drip rate needs to be included in order</td>
+    <td>Drip rate may be included in comment; seperate order for carrier solution needed</td>
+  </tr>
+  <tr>
+    <td style="font-style: italic">Long term medications brought by patient</td>
+    <td>Order system is subsystem of medication system; switching from patient's own meds and ordering meds from the pharmacy is done semi-manually</td>
+    <td>Orders to use patient's own medication is done via a tickbox if the pharmacy carries the drug; tickbox in miscellaneous orders is used if the pharmacy does not carry the drug</td>
+  </tr>
+  <tr>
+    <td style="font-style: italic">Authorization system</td>
+    <td>Authorization by licensed physician is done in batch from patient's main page; all orders must be authorized</td>
+    <td>Authorization by licensed physician is done once confirmation button is clicked while on medication orders page; no authorization needed for diagnostics, procedures and miscellaneous orders</td> 
+</table>                </article>
             </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/the-beginning.html" rel="bookmark"
+                           title="Permalink to The Beginning">The Beginning</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2017-04-26T14:20:00+08:00">
+                Published: Wed 26 April 2017
+        </abbr>
+		<br />
+        <abbr class="modified" title="2017-05-02T20:15:00+08:00">
+                Updated: Tue 02 May 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/chang-yi-yen.html">Chang-Yi Yen</a>
+        </address>
+<p>In <a href="/category/blog.html">blog</a>.</p>
+<p>tags: <a href="/tag/introduction.html">introduction</a> <a href="/tag/personal.html">personal</a> </p>
+</footer><!-- /.post-info -->                <p>Brief introduction to who I am</p>
+                <a class="readmore" href="/the-beginning.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+                </section><!-- /#content -->
         <section id="extras" class="body">
                 <div class="blogroll">
                         <h2>blogroll</h2>
