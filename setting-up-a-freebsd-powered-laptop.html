@@ -117,7 +117,7 @@
 <ol>
 <li>
 <p>Install the base FreeBSD system according to the tutorial.</p>
-</li>
+<ul>
 <li>
 <p>Keymap: I chose the default keymap (US). This works with input methods which use bopomofo.</p>
 </li>
@@ -133,14 +133,16 @@
 <li>
 <p>System hardening: I enabled 'Randomize the PID for newly created processes' and 'Disallow Dtrace destructive-mode'.</p>
 </li>
+</ul>
+</li>
 <li>
 <p>Reboot and setup the pf firewall according to the tutorial.</p>
 </li>
 <li>
 <p>Setup root .cshrc.</p>
-</li>
-<li>
-<p>I did not change the pager to 'more', as I'm more familiar with and prefer 'less' over 'more' (since it allows you to scroll backwards).</p>
+<ul>
+<li>I did not change the pager to 'more', as I'm more familiar with and prefer 'less' over 'more' (since it allows you to scroll backwards).</li>
+</ul>
 </li>
 <li>
 <p>Reboot and take note of how to enter single-user mode to fix rc.conf if you happen to screw it up (fortunately this did not happen during my install).</p>
@@ -153,54 +155,58 @@
 </li>
 <li>
 <p>Install portmaster (ports-mgmt/portmaster).</p>
-</li>
-<li>
-<p>You may want to skip the part about installing mc, it's up to you (personally I never used it much afterwards).</p>
+<ul>
+<li>You may want to skip the part about installing mc, it's up to you (personally I never used it much afterwards).</li>
+</ul>
 </li>
 <li>
 <p>Install X.org (x11/xorg).</p>
-</li>
+<ul>
 <li>
 <p>I installed the VESA driver (which doesn't support Full HD). The Thinkpad E550 has a combination of AMD Radeon R7 M260 and Intel integrated graphics on a Core i5 5200U; you can choose only one at boot time to run (unlike, say, Nvidia with Intel integrated graphics on Linux, where you can use <a href="https://bumblebee-project.org">Bumblebee</a> to switch between the two at runtime). Intel integrated graphics for this CPU version is not supported by the X.org builtins. You need to install the port graphics/drm-next-kmod (or perhaps the newer and more up-to-date graphics/drm-current-kmod) in order to get graphics running at the correct resolution.</p>
 </li>
 <li>
 <p>I also installed the Synaptics driver for X.org (x11-drivers/xf86-input-synaptics), but support for the Thinkpad's touchpad is still spotty (specifically the right mouse button is a bit wonky). USB mouse works without issues though.</p>
 </li>
-<li>
-<p>Reboot and install Xfce4 (x11/xfce4).</p>
+</ul>
 </li>
 <li>
-<p>Fluxbox is very lightweight and configurable (and I really ought to learn it one of these days), but Xfce4 is something I've known and loved (probably second only to KDE, at least before Systemd got its grubby hands all over it).</p>
+<p>Reboot and install Xfce4 (x11/xfce4).</p>
+<ul>
+<li>Fluxbox is very lightweight and configurable (and I really ought to learn it one of these days), but Xfce4 is something I've known and loved (probably second only to KDE, at least before Systemd got its grubby hands all over it).</li>
+</ul>
 </li>
 <li>
 <p>Install the Xfce4 goodies (x11/xfce4-goodies).</p>
-</li>
+<ul>
 <li>
 <p>This port provides some really nice stuff like desktop applets, a wireless connection manager, and a battery monitor (a must for any laptop).</p>
 </li>
 <li>
 <p>You may want to consider <em>not</em> installing stuff related to PulseAudio. It's not a bad technical choice per se, but I consider PulseAudio kind of bloated, especially when alternatives live Sndio are available.</p>
 </li>
-<li>
-<p>Install xfe (x11-fm/xfe), Leafpad (editors/leafpad), and Eterm (x11/eterm).</p>
+</ul>
 </li>
 <li>
-<p>You can skip these if you prefer the utilities in the xfce4 goodies.</p>
+<p>Install xfe (x11-fm/xfe), Leafpad (editors/leafpad), and Eterm (x11/eterm).</p>
+<ul>
+<li>You can skip these if you prefer the utilities in the xfce4 goodies.</li>
+</ul>
 </li>
 <li>
 <p>Enable dbus and hald in rc.conf.</p>
 </li>
 <li>
 <p>Create the .xinitrc file for your user.</p>
-</li>
-<li>
-<p>For Xfce4 the file simply contains the line 'exec startxfce4'.</p>
+<ul>
+<li>For Xfce4 the file simply contains the line 'exec startxfce4'.</li>
+</ul>
 </li>
 <li>
 <p>Reboot.</p>
-</li>
-<li>
-<p>At this point you can try running startx to see if Xfce4 works.</p>
+<ul>
+<li>At this point you can try running startx to see if Xfce4 works.</li>
+</ul>
 </li>
 <li>
 <p>Create the devfs rules and enable devd according to the tutorial.</p>
@@ -213,30 +219,32 @@
 </li>
 <li>
 <p>Reboot.</p>
-</li>
+<ul>
 <li>
 <p>I did not edit the /etc/ttys file, just in case I lost the root password and needed single-user mode.</p>
 </li>
 <li>
 <p>I did not delete the toor user, though I probably should.</p>
 </li>
+</ul>
+</li>
 <li>
 <p>Edit /etc/rc.conf according to the tutorial and reboot.</p>
 </li>
 <li>
 <p>Install the NTFS-3G drivers (sysutils/fusefs-ntfs).</p>
-</li>
-<li>
-<p>Many USB flash disks are NTFS-formatted these days (at least, more common than ones using exFAT, in which case you want sysutils/fusefs-exfat).</p>
+<ul>
+<li>Many USB flash disks are NTFS-formatted these days (at least, more common than ones using exFAT, in which case you want sysutils/fusefs-exfat).</li>
+</ul>
 </li>
 <li>
 <p>Enable fuse in rc.conf.</p>
 </li>
 <li>
 <p>Install programs you commonly use.</p>
-</li>
-<li>
-<p>I installed Firefox (www/firefox) and LibreOffice (editors/libreoffice), both of which can take overnight to compile (Firefox needs Rust and LibreOffice needs the JDK).</p>
+<ul>
+<li>I installed Firefox (www/firefox) and LibreOffice (editors/libreoffice), both of which can take overnight to compile (Firefox needs Rust and LibreOffice needs the JDK).</li>
+</ul>
 </li>
 </ol>
 <h2>Open issues</h2>
