@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <meta charset='utf-8'>
+  <head>
+    <title>sort | uniq</title>
+    <script>
+      function uniq(v, i, self) {
+        return self.indexOf(v) === i;
+      }
+      function f() {
+        var box = document.getElementById('in');
+        var a = box.value.split("\n");
+        var u = a.map(x => x.trim()).sort().filter(uniq).filter((v,i,a) => v.length > 0);
+        box.value = u.join("\n");
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      sort | uniq
+      <br>
+      <textarea id='in' rows=10 cols=50></textarea>
+      <input type='button' value='process' onclick="f()">
+    </form>
+  </body>
+</html>
