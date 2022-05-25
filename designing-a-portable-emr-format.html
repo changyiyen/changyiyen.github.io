@@ -113,9 +113,9 @@
         <div class="entry-content">
 
         <h1>前言</h1>
-<p>在進行臨床工作一陣子後，不時會經歷像這樣的情境：有一位初診病人來到你的診間或病房，可能是被轉診到這裡或是病人自行選擇尋求第二意見。病人帶來一份(往往不完整的)紙本病歷，並滔滔不絕的說之前的醫師什麼都沒幫他做，或是說「醫師只說...然後就...」，然後要你來幫幫他。病人沒帶含CT或MRI的影像檔案，或是帶來的光碟片或隨身碟沒有需要的檔案。治療計畫與釐清病人病情的進度就卡在等待病人把資料補齊的瓶頸<sup id="fnref-1"><a class="footnote-ref" href="#fn-1">1</a></sup>。</p>
-<p>自從最早期的電子病歷(electronic medical records, EMR)系統上線後，醫院與醫院間電子病歷的交換一直是個問題。目前比較廣為採用的交換標準是由HL7維護的<a href="https://zh.wikipedia.org/zh-tw/%E4%B8%B4%E5%BA%8A%E6%96%87%E6%A1%A3%E6%9E%B6%E6%9E%84">臨床文檔架構</a>(Clinical Document Architecture)，是基於XML的一套規格。在台灣這幾乎所有醫療機構都納入全民健保下的特殊環境中，衛生福利部的目標之一是讓國內各醫療機關上傳電子病歷，並透過電子病歷交換中心進行電子病歷交換，以期達成減少重複檢查與資源浪費的目標。目前有4種單張可供交換：影像報告、血液檢查、出院病摘、門診病歷與用藥。然而由於並非每間醫院都會將詳細的病歷上傳(而且醫院也沒有這麼做的明顯誘因<sup id="fnref-2"><a class="footnote-ref" href="#fn-2">2</a></sup>)，以及現在消費者資訊產品愈趨發達，由病人自行攜帶病歷來往於各醫院之間的情形也愈來愈常見，隨之而來的就是如何讓病人攜帶病歷的問題。</p>
-<p>美國政府的退伍軍人事務部(United States Department of Veteran Affairs)曾推行一個稱作<a href="https://www.healthit.gov/topic/health-it-initiatives/blue-button">Blue Button</a>的方案，於讓民眾能在隸屬退伍軍人事務部的醫院的網頁上點個藍色按鈕以下載病歷紀錄。實際執行時，可供下載的檔案格式是(未加密的)ASCII文字檔或是PDF。與此類似，台灣衛生福利部目前正在推行「<a href="https://myhealthbank.nhi.gov.tw">健康存摺</a>」，內容包含門診、手術紀錄、用藥資料、檢驗報告、病理報告、影像報告、住院資料、出院摘要、過敏資料、預防接種紀錄...。內容雖多，但其實健康存摺並未涵蓋所有可能會出現的檢驗結果(例如細菌培養)。此外，要使用這項服務，必須先由病人提出申請(雖然申請步驟相對上便利)，也需要原醫療機構主動上傳病歷<sup id="fnref-3"><a class="footnote-ref" href="#fn-3">3</a></sup>。</p>
+<p>在進行臨床工作一陣子後，不時會經歷像這樣的情境：有一位初診病人來到你的診間或病房，可能是被轉診到這裡或是病人自行選擇尋求第二意見。病人帶來一份(往往不完整的)紙本病歷，並滔滔不絕的說之前的醫師什麼都沒幫他做，或是說「醫師只說...然後就...」，然後要你來幫幫他。病人沒帶含CT或MRI的影像檔案，或是帶來的光碟片或隨身碟沒有需要的檔案。治療計畫與釐清病人病情的進度就卡在等待病人把資料補齊的瓶頸<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>。</p>
+<p>自從最早期的電子病歷(electronic medical records, EMR)系統上線後，醫院與醫院間電子病歷的交換一直是個問題。目前比較廣為採用的交換標準是由HL7維護的<a href="https://zh.wikipedia.org/zh-tw/%E4%B8%B4%E5%BA%8A%E6%96%87%E6%A1%A3%E6%9E%B6%E6%9E%84">臨床文檔架構</a>(Clinical Document Architecture)，是基於XML的一套規格。在台灣這幾乎所有醫療機構都納入全民健保下的特殊環境中，衛生福利部的目標之一是讓國內各醫療機關上傳電子病歷，並透過電子病歷交換中心進行電子病歷交換，以期達成減少重複檢查與資源浪費的目標。目前有4種單張可供交換：影像報告、血液檢查、出院病摘、門診病歷與用藥。然而由於並非每間醫院都會將詳細的病歷上傳(而且醫院也沒有這麼做的明顯誘因<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>)，以及現在消費者資訊產品愈趨發達，由病人自行攜帶病歷來往於各醫院之間的情形也愈來愈常見，隨之而來的就是如何讓病人攜帶病歷的問題。</p>
+<p>美國政府的退伍軍人事務部(United States Department of Veteran Affairs)曾推行一個稱作<a href="https://www.healthit.gov/topic/health-it-initiatives/blue-button">Blue Button</a>的方案，於讓民眾能在隸屬退伍軍人事務部的醫院的網頁上點個藍色按鈕以下載病歷紀錄。實際執行時，可供下載的檔案格式是(未加密的)ASCII文字檔或是PDF。與此類似，台灣衛生福利部目前正在推行「<a href="https://myhealthbank.nhi.gov.tw">健康存摺</a>」，內容包含門診、手術紀錄、用藥資料、檢驗報告、病理報告、影像報告、住院資料、出院摘要、過敏資料、預防接種紀錄...。內容雖多，但其實健康存摺並未涵蓋所有可能會出現的檢驗結果(例如細菌培養)。此外，要使用這項服務，必須先由病人提出申請(雖然申請步驟相對上便利)，也需要原醫療機構主動上傳病歷<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>。</p>
 <p>所以就來到了這個思考實驗：我們能不能設計一個簡單、可攜的檔案格式，讓病人可以輕易的用隨身碟裝載病歷文件、實驗室數據以及影像？</p>
 <h1>電子病歷格式的需求</h1>
 <p>整體來說，我認為基本的電子病歷交換格式該有以下幾個特點：</p>
@@ -131,13 +131,13 @@
 <h2>可延伸</h2>
 <p>就目前的技術而言，病歷當中最常見的資訊格式是影像(通常是<a href="https://zh.wikipedia.org/wiki/DICOM">DICOM</a>格式)與文字(包括衍生的格式，例如PDF)。然而數十年後的未來，應用於病歷的檔案格式有可能與現在不同，例如聲音檔的更廣泛應用，或是有全新的格式變得更常見，例如3D模型(作為技術案例，可參考HTML5相較於HTML4新增的對立體物件格式的支援)。因此理想的格式應保有可延伸性；由此推伸，讀取病歷的軟體應有向前與向後相容性。</p>
 <h2>支持數位簽章</h2>
-<p>病歷作為法律文件，其中一個特殊需求是可驗證性，以防偽造及變造。傳統上紙本病歷會用印章(醫師及院所印章<sup id="fnref-4"><a class="footnote-ref" href="#fn-4">4</a></sup>)達成此需求，而電子病歷則(依院所)使用數位簽章達成。在台灣的全民健保下，電子病歷的數位簽章演算法使用的是2048位元的RSA<sup id="fnref-5"><a class="footnote-ref" href="#fn-5">5</a></sup>。</p>
-<p>數位簽章問題的另一層面就是信任的建立。舉例來說，看到病歷是某醫師的數位簽章，但要驗證這個簽章時，要怎麼知道這簽章的真偽以及這人是否真的是醫師？現實中，在無法親自拜訪每一位醫師進行公開金鑰的驗證與簽名的情形下<sup id="fnref-6"><a class="footnote-ref" href="#fn-6">6</a></sup>，需要一個獨立的，能提供可信任數據的來源，類似現在TLS通訊使用的公開金鑰基礎建設(public key infrastructure, PKI)<sup id="fnref-7"><a class="footnote-ref" href="#fn-7">7</a></sup>。國內的醫事人員使用的數位簽章智慧卡統一由衛生福利部的<a href="https://hca.nat.gov.tw/">醫事憑證管理中心</a>(Health Certificate Authority)發放，自然就成了PKI的首選<sup id="fnref-8"><a class="footnote-ref" href="#fn-8">8</a></sup>。</p>
+<p>病歷作為法律文件，其中一個特殊需求是可驗證性，以防偽造及變造。傳統上紙本病歷會用印章(醫師及院所印章<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup>)達成此需求，而電子病歷則(依院所)使用數位簽章達成。在台灣的全民健保下，電子病歷的數位簽章演算法使用的是2048位元的RSA<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup>。</p>
+<p>數位簽章問題的另一層面就是信任的建立。舉例來說，看到病歷是某醫師的數位簽章，但要驗證這個簽章時，要怎麼知道這簽章的真偽以及這人是否真的是醫師？現實中，在無法親自拜訪每一位醫師進行公開金鑰的驗證與簽名的情形下<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup>，需要一個獨立的，能提供可信任數據的來源，類似現在TLS通訊使用的公開金鑰基礎建設(public key infrastructure, PKI)<sup id="fnref:7"><a class="footnote-ref" href="#fn:7">7</a></sup>。國內的醫事人員使用的數位簽章智慧卡統一由衛生福利部的<a href="https://hca.nat.gov.tw/">醫事憑證管理中心</a>(Health Certificate Authority)發放，自然就成了PKI的首選<sup id="fnref:8"><a class="footnote-ref" href="#fn:8">8</a></sup>。</p>
 <p>目前有許多軟體提供各種演算法的數位簽章，而其中最有名的工具之一是<a href="https://gnupg.org/">GNU Privacy Guard</a>。GPG可提供分離的簽章(亦即簽章檔跟檔案本身是分離的)或嵌入的簽章。理想上，我們會想要嵌入的簽章，因為可避免分別檔案所造成的混亂。</p>
 <h2>支持加密</h2>
 <p>加密是相當不證自明的需求。病歷資料作為機密文件，理應被加密儲存及傳送(或至少要能原生的支援加密)。選擇的加密演算法應該要安全且相對廣泛的被使用。同時，我們想要的格式需要能夠替換不同的加密演算法，以達到相容性，或萬一演算法被發現有重大瑕疵必須被撤換時仍可維持相容。</p>
 <h1>現有的可下載電子病歷格式及其優缺點</h1>
-<p>以下針對兩個「可供病人下載的電子病歷格式」的優缺點進行討論。其他有很多商用的應用軟體就不在此討論，例如蘋果公司的電子病歷系統(<a href="https://www.apple.com/healthcare/">Apple Healthcare</a>)：它是應用程式而非檔案格式<sup id="fnref-9"><a class="footnote-ref" href="#fn-9">9</a></sup>。</p>
+<p>以下針對兩個「可供病人下載的電子病歷格式」的優缺點進行討論。其他有很多商用的應用軟體就不在此討論，例如蘋果公司的電子病歷系統(<a href="https://www.apple.com/healthcare/">Apple Healthcare</a>)：它是應用程式而非檔案格式<sup id="fnref:9"><a class="footnote-ref" href="#fn:9">9</a></sup>。</p>
 <h2>健康存摺</h2>
 <p>按照衛生福利部的介紹，「『健康存摺』為一線上健康資料查詢系統」，用意在於讓民眾能方便的查詢個人健康資料。除了提供線上查詢功能外，健康存摺系統還提供一個SDK，可讓使用者把資料下載後提供給第三方應用程式使用。嚴格而言，健康存摺並不算是可下載的電子病歷格式(因為透過SDK下載的資料僅方便第三方應用程式使用)，也不容易直接與醫院的病歷系統整合(除非醫院自己開發能與病歷系統整合的應用程式)。此外，健康存摺的內容仍非相當完整，例如缺乏(獨立的)生命徵象紀錄、影像檔案、檢驗/檢查的細節(例如採用的儀器或試劑)...等。</p>
 <h2>Blue Button</h2>
@@ -149,17 +149,17 @@
 <p>從一個最底層的觀點來看，現行的病歷絕大部分是文字(其中可能包含排版)，以及較為少數的影像，因此我們的檔案格式也必須能輕易的處理這兩類內容。</p>
 <h3>HTML</h3>
 <p>HTML(HyperText Markup Language)作為網頁的基礎語言，包含許多功能以有效的傳達資訊。HTML的一個關鍵優勢在於當今普及的智慧型手機與平板電腦都內建瀏覽器，讓絕大多數人能輕易的打開HTML檔，達到很高的普及率。HTML是一個相對有彈性而可延伸的語言(雖然仍不及XML)，更可以用data URI方式鑲嵌別的檔案(例如可以用<code>&lt;img&gt;</code>和<code>data:image/png;base64,...</code>鑲嵌圖片)。值得一提的是，用data URI方式鑲嵌檔案時，檔案大小仍是一個重要考量，因為每個瀏覽器支援的檔案大小限制不同。因此，若要鑲嵌大型檔案(例如DICOM)時，這可能會是限制因子。</p>
-<p>HTML的一個優勢在於能搭配CSS與Javascript使用，達到強大的呈現效果。然而這也是它最大的弱點：瀏覽器未即時更新並修正漏洞時，隨之而來的各種安全問題<sup id="fnref-10"><a class="footnote-ref" href="#fn-10">10</a></sup>，尤其是在執行JavaScript時<sup id="fnref-11"><a class="footnote-ref" href="#fn-11">11</a></sup>。</p>
+<p>HTML的一個優勢在於能搭配CSS與Javascript使用，達到強大的呈現效果。然而這也是它最大的弱點：瀏覽器未即時更新並修正漏洞時，隨之而來的各種安全問題<sup id="fnref:10"><a class="footnote-ref" href="#fn:10">10</a></sup>，尤其是在執行JavaScript時<sup id="fnref:11"><a class="footnote-ref" href="#fn:11">11</a></sup>。</p>
 <h3>Markdown與其他輕量級標記語言</h3>
 <p>Markdown是一種所謂的輕量級標記語言，可以輕易的用純文字編輯器編輯並閱讀，也能用適當的程式轉換為別的格式，例如PDF或HTML。其他例子包含AsciiDoc和reStructuredText...等等。輕量級標記語言的好處是容易編輯，但缺點是這些格式的標準語法(不包含各家公司製作的延伸)通常無法鑲嵌檔案。</p>
 <h3>PDF</h3>
 <p>Adobe公司開發的PDF(Portable Document Format，可攜式文件格式)是目前最常見的文件檔案格式之一。除了保存字形與文件格式外，它也提供了加密(較新版的用AES-256演算法)與數位簽章功能。PDF的數位簽章功能需要透過網域憑證完成，通常會採用簽章者電腦上瀏覽器(例如Chrome或Firefox)的PKI系統(當然，前提示簽章者已經先準備或購買了憑證)。</p>
-<p>PDF檔案保存了文件格式(這裡指layout)，但這件事的反面就是無法在解析度或顯示比例不同的裝置上方便的重新排版<sup id="fnref-12"><a class="footnote-ref" href="#fn-12">12</a></sup>。</p>
+<p>PDF檔案保存了文件格式(這裡指layout)，但這件事的反面就是無法在解析度或顯示比例不同的裝置上方便的重新排版<sup id="fnref:12"><a class="footnote-ref" href="#fn:12">12</a></sup>。</p>
 <h3>圖片檔</h3>
-<p>圖片檔應該不需要太多解釋：它可以存放文字紀錄(例如螢幕截圖)或其他的影像(例如傷口影像)。主要需要考量的是，這些格式無法輕易的讓電腦搜尋，看影像的人也必須小心剖析影像的內容才不會有缺漏<sup id="fnref-13"><a class="footnote-ref" href="#fn-13">13</a></sup>。</p>
+<p>圖片檔應該不需要太多解釋：它可以存放文字紀錄(例如螢幕截圖)或其他的影像(例如傷口影像)。主要需要考量的是，這些格式無法輕易的讓電腦搜尋，看影像的人也必須小心剖析影像的內容才不會有缺漏<sup id="fnref:13"><a class="footnote-ref" href="#fn:13">13</a></sup>。</p>
 <h3>SQLite</h3>
 <p>SQLite是一種輕量(但完整)的資料庫格式，可以提供一個大致上符合SQL92標準的SQL關聯性資料庫。特色是所有的資訊都包在同一個檔案裡，包含資料庫的所有資料以及資料表和資料庫結構，而不像其他傳統的資料庫系統，由大量的檔案程式組成。由於資料庫的結構(schema)有極大的彈性，可以存放文字與二進位檔，加上SQLite本身高可靠性、跨平台、開放格式的特點，使它成為跨平台交換複雜資料不錯的選擇。它的缺點主要在於，若想用比較好看的方式閱讀當中的資料時，使用端(例如醫師)必須用比較不常見的工具(例如DB Browser)開啟。此外，SQLite作為SQL資料庫，最強大而最核心的功能是資料的查找和提取。若我們的重點是要交換文字格式的病歷而</p>
-<p>SQLcipher是SQLite的一個外掛，提供整個SQLite資料庫的AES-256加密。這是一個重大的功能<sup id="fnref-14"><a class="footnote-ref" href="#fn-14">14</a></sup>，但還沒解決數位簽章的問題。</p>
+<p>SQLcipher是SQLite的一個外掛，提供整個SQLite資料庫的AES-256加密。這是一個重大的功能<sup id="fnref:14"><a class="footnote-ref" href="#fn:14">14</a></sup>，但還沒解決數位簽章的問題。</p>
 <h2>封存格式 (archive formats)</h2>
 <p>在談封存格式前首先要認識容器格式。所謂的容器格式(container format)指的是容納一個以上資料串的檔案格式。一些常見的例子包含影片檔(例如MP4或MKV)以及封存格式。封存格式指的是能把多個檔案合併在一個檔案儲存的格式，例如ZIP檔。值得提的是，封存格式並不代表一定有資料壓縮能力，ZIP只是同時有這功能。在此，我們要討論的是封存格式的應用。</p>
 <p>在此提出一個重要前提：以下討論封存格式談到「加密」時，除非額外敘述，否則指的是整個檔案的加密。就設計上，任何檔案都可加密後再用ASCII armor或Base32/Base64的方式轉為文字檔，代入一般只接受未加密文字的位置。</p>
@@ -174,7 +174,7 @@
 <p>除了Zip以外，也有許多開放的封存格式可供選擇，例如很古老的tar檔、將tar檔壓縮後產生的tar.gz或tar.bz2檔，以及.7z等。常見的RAR檔由於是非開放格式，並不符合我們設立的條件。</p>
 <p>tar檔以及其常見的壓縮產物tar.gz與tar.bz2不支援加密，但7z支援AES-256加密。7z格式一個可能有用的功能是，可把檔案分拆成多個小檔案(內建錯誤偵測及修正機制)，方便傳送。</p>
 <h3>版本控制系統 (version control systems)</h3>
-<p>版本控制系統常常用於追蹤程式碼的變更。因此，若用於病歷文件時，可以提供誰新增了什麼或誰刪減什麼的紀錄。在一些情形下，增刪紀錄會很有用，但若是單純要輸出資料，增刪紀錄的功能就不太會用到<sup id="fnref-15"><a class="footnote-ref" href="#fn-15">15</a></sup>。</p>
+<p>版本控制系統常常用於追蹤程式碼的變更。因此，若用於病歷文件時，可以提供誰新增了什麼或誰刪減什麼的紀錄。在一些情形下，增刪紀錄會很有用，但若是單純要輸出資料，增刪紀錄的功能就不太會用到<sup id="fnref:15"><a class="footnote-ref" href="#fn:15">15</a></sup>。</p>
 <p>一般版本控制系統依操作模型分成數個大類別：集中式(又分本地、伺服端-客戶端模型)與分散式。以下分別討論。</p>
 <h4>集中式</h4>
 <p>集中式版本控制系統假設每個操作者都在同一份文件上進行讀寫。在我們的討論裡，這對應到每一位醫師編寫同一份病歷(無論這份病歷是存在哪)。顯然這並不符合我們的模型，不過為了完整性我們還是會分別簡述。</p>
@@ -182,10 +182,10 @@
 <p>伺服端-客戶端模型則較為常見，例如<a href="https://zh.wikipedia.org/wiki/Subversion">Subversion</a>、CVS...等。這些版本控制系統可以輸出某目錄或檔案的某版本，但這無法解決我們討論的格式問題。</p>
 <h4>分散式</h4>
 <p>分散式版本控制系統可讓多人分別在不同網路和運算環境下進行檔案異動，而非限制每個人必須在同一個目錄上操作。這麼作的好處是，每個人都能獨立進行開發，開發完成後再把更動推回原目錄。目前常見的分散式版本控制系統有<a href="https://git-scm.com/book/zh-tw/v2/%E9%96%8B%E5%A7%8B-%E9%97%9C%E6%96%BC%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6">Git</a>、<a href="https://www.monotone.ca/">Monotone</a>、<a href="https://www.mercurial-scm.org/">Mercurial</a>、<a href="https://fossil-scm.org/home/doc/trunk/www/index.wiki">Fossil</a>...等等。</p>
-<p>在我們的使用情境裡，分散式版本控制系統帶來的好處有限，因為我們的目標是讓病人自帶一份病歷以給別人看，而非再更進一步讓後來接手的醫師更動病歷後再把更動推回去<sup id="fnref-16"><a class="footnote-ref" href="#fn-16">16</a></sup>。以下會以Git為例，但其他分散式版本控制系統的使用概念與情境類似。</p>
+<p>在我們的使用情境裡，分散式版本控制系統帶來的好處有限，因為我們的目標是讓病人自帶一份病歷以給別人看，而非再更進一步讓後來接手的醫師更動病歷後再把更動推回去<sup id="fnref:16"><a class="footnote-ref" href="#fn:16">16</a></sup>。以下會以Git為例，但其他分散式版本控制系統的使用概念與情境類似。</p>
 <h5>Git儲存庫(repository)</h5>
 <p>Git是Linus Torvalds從Monotone得到啟發所設計的一套分散式版本控制系統。最早它用在開發Linux內核，但現在被大量應用在別的計畫，是最常見的分散式版本控制系統之一。跟其他版本控制系統一樣，Git能把檔案版本進行分支和管理，還能把檔案修改狀態恢復到某次的提交(commit)時。Git的特色之一是採用SHA-2雜湊辨識每個物件和每個提交；這麼作的額外好處是，Git對檔案庫的內容可提供密碼學上的保障。此外，Git還能讓提交者對自己的提交進行數位簽章。</p>
-<p>Git固然功能強大，但它的操作方式稍微複雜，大部分醫療人員並不會操作<sup id="fnref-17"><a class="footnote-ref" href="#fn-17">17</a></sup>，單一儲存庫裡的檔案數也相當大量，在檔案的攜帶與傳送上較為不便。</p>
+<p>Git固然功能強大，但它的操作方式稍微複雜，大部分醫療人員並不會操作<sup id="fnref:17"><a class="footnote-ref" href="#fn:17">17</a></sup>，單一儲存庫裡的檔案數也相當大量，在檔案的攜帶與傳送上較為不便。</p>
 <h2>數位簽章</h2>
 <p>數位簽章指的是透過密碼學的方式對一份電子檔案進行簽章，以確保檔案的正確性，同時辨別簽章者身份。簡單來說，是使用只有簽章者才有的私密金鑰以及文件本身，產生一個簽章檔。簽章檔之後可用來驗證文件的真實性。以下介紹討論幾個常見的數位簽章技術。我不是密碼學家，因此這裡只是一個概論。</p>
 <h3>GPG (GNU Privacy Guard)</h3>
@@ -195,21 +195,21 @@
 <p>會得到文字檔版本的tar archive以及簽章。主要的限制在tar可能有單行字符輸入上限。</p>
 <p>先前我們提過HTML檔。曾有人想開發一套<a href="https://espenandersen.no/sign-a-web-page-with-pgp/">系統</a>，可以讓網頁可以大致上保留原結構，但又能使用GPG進行檔案驗證：</p>
 <p><code>curl signed_page.htm | gpg &gt; /dev/null</code></p>
-<p>這是一個有趣的解法<sup id="fnref-18"><a class="footnote-ref" href="#fn-18">18</a></sup>，但要修改瀏覽器來驗證這類檔案恐怕不是件容易普及的事。</p>
+<p>這是一個有趣的解法<sup id="fnref:18"><a class="footnote-ref" href="#fn:18">18</a></sup>，但要修改瀏覽器來驗證這類檔案恐怕不是件容易普及的事。</p>
 <h3>OpenSSL</h3>
 <p>OpenSSL(以及自2014年<a href="https://www.ithome.com.tw/news/86593">Heartbleed事件</a>後衍生的LibreSSL)是一套廣為應用的密碼學軟體，除了能進行金鑰的產生，也能進行檔案的加密、簽章與驗證，還能產生網站憑證。它與GPG功能部份重複，但還能替某些格式(例如PDF與OpenDocument)產生簽章用的憑證。值得注意的是，自己可用OpenSSL產生憑證並給憑證簽章，但若憑證沒經由PKI裡的憑證機構(certificate authority, CA)檢視、簽章並加到瀏覽器的信任憑證清單的話，接收檔案的人就必須直接信任你的憑證是真實的。</p>
 <h3>signify與minisign</h3>
-<p>由於GPG使用上比較複雜，OpenSSL又需要牽涉到PKI<sup id="fnref-19"><a class="footnote-ref" href="#fn-19">19</a></sup>，OpenBSD作業系統計畫於2015年開發了<a href="https://www.openbsd.org/papers/bsdcan-signify.html">signify</a>工具作為前述兩者的替代品。其特點是只支持一種演算法(Ed25519橢圓曲線)，操作界面也大幅簡化。然而它從設計上不支援PKI的概念會給我們帶來些麻煩：我們可以信任衛生福利部認證的醫師身份<sup id="fnref-20"><a class="footnote-ref" href="#fn-20">20</a></sup>，因此我們其實在衛生福利部的憑證中心這塊有PKI可用。</p>
+<p>由於GPG使用上比較複雜，OpenSSL又需要牽涉到PKI<sup id="fnref:19"><a class="footnote-ref" href="#fn:19">19</a></sup>，OpenBSD作業系統計畫於2015年開發了<a href="https://www.openbsd.org/papers/bsdcan-signify.html">signify</a>工具作為前述兩者的替代品。其特點是只支持一種演算法(Ed25519橢圓曲線)，操作界面也大幅簡化。然而它從設計上不支援PKI的概念會給我們帶來些麻煩：我們可以信任衛生福利部認證的醫師身份<sup id="fnref:20"><a class="footnote-ref" href="#fn:20">20</a></sup>，因此我們其實在衛生福利部的憑證中心這塊有PKI可用。</p>
 <p><a href="https://jedisct1.github.io/minisign/">minisign</a>則是與signify相似而相容的工具，同樣應用Ed25519橢圓曲線加密法，不過簽章格式稍有不同(但minisign產生的簽章能用signify驗證)。</p>
 <h2>加密</h2>
-<p>病歷檔案能夠加密是很重要的需求，畢竟病歷屬於重大個資。台灣沒類似美國HIPAA的規範，不過保密的精神被寫入個資法、醫師法等相關法律。因此，前面需要討論格式能否加密<sup id="fnref-21"><a class="footnote-ref" href="#fn-21">21</a></sup>。</p>
+<p>病歷檔案能夠加密是很重要的需求，畢竟病歷屬於重大個資。台灣沒類似美國HIPAA的規範，不過保密的精神被寫入個資法、醫師法等相關法律。因此，前面需要討論格式能否加密<sup id="fnref:21"><a class="footnote-ref" href="#fn:21">21</a></sup>。</p>
 <p>加密大致可分成對稱與非對稱加密。前者加密和解密都用同一份金鑰，而非對稱加密採用私密與公開金鑰機制(意即用公開金鑰加密檔案後，只有持有私密金鑰的人能解密)。這方面而言，非對稱加密與數位簽章有相似之處(使用私密金鑰進行簽章，公開金鑰則用來驗證檔案)。事實上，有些演算法(例如RSA)可讓產生的私密與公開金鑰組合同時提供加密與簽章功能。</p>
 <p>前述的GPG與OpenSSL除了簽章外，也提供加密服務。就使用情境而言，對稱加密可能會優於非對稱加密，因為病人可以直接給出密碼，而不用再攜帶一份解密金鑰。</p>
 <h1>總結</h1>
 <p>分析下來，我得到的結論如下：</p>
 <ol>
 <li>就普及性而言，目前最好的方案可能是HTML或PDF，因為瀏覽器和PDF閱讀器都能輕易取得。</li>
-<li>就功能性而言，目前最好的方案可能是EPUB或OpenDocument，因為都可相對容易的鑲嵌檔案<sup id="fnref-22"><a class="footnote-ref" href="#fn-22">22</a></sup>。其中EPUB又優於OpenDocument，因為沒有強制文字的排版。</li>
+<li>就功能性而言，目前最好的方案可能是EPUB或OpenDocument，因為都可相對容易的鑲嵌檔案<sup id="fnref:22"><a class="footnote-ref" href="#fn:22">22</a></sup>。其中EPUB又優於OpenDocument，因為沒有強制文字的排版。</li>
 <li>就安全性而言，目前最好的方案可能是PDF或OpenDocument，因為常見的閱讀器與編輯器都會自動檢查檔案的簽章，兩者也都有內建的加密功能。然而，使用這功能的重要前提是有CA能提供憑證。EPUB則有潛力列入考量，因為技術格式是支援加密與簽章的，只是因為是選擇性而導致實做的廠商甚少。</li>
 </ol>
 <p>就目前看來，仍然沒有一個完全適合讓病人攜帶自己病歷的格式，雖然某些格式只差那臨門一腳。我們還有工作要作。</p>
@@ -220,71 +220,71 @@
 <div class="footnote">
 <hr>
 <ol>
-<li id="fn-1">
-<p>依據我的觀察，這情境最常出現在癌症或外科病人。若你沒遇過，恭喜你，因為這些人真的很花時間。&#160;<a class="footnote-backref" href="#fnref-1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<li id="fn:1">
+<p>依據我的觀察，這情境最常出現在癌症或外科病人。若你沒遇過，恭喜你，因為這些人真的很花時間。&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
-<li id="fn-2">
-<p>這是台灣健保制度眾多弔詭的地方之一：理論上，全民健保接近百分百的涵蓋率意味醫療院所之間的關係是偏社會主義的，而病人相對上比較不會有誘因換醫院看，但現實是院所會互相爭。不過我不是這方面的專家，或許大家可給我一些意見。&#160;<a class="footnote-backref" href="#fnref-2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<li id="fn:2">
+<p>這是台灣健保制度眾多弔詭的地方之一：理論上，全民健保接近百分百的涵蓋率意味醫療院所之間的關係是偏社會主義的，而病人相對上比較不會有誘因換醫院看，但現實是院所會互相爭。不過我不是這方面的專家，或許大家可給我一些意見。&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
-<li id="fn-3">
-<p>然後每隔一段時間就會遇到病人很理所當然的以為大家都會把病歷(出院摘要)上傳。愚か者よ...&#160;<a class="footnote-backref" href="#fnref-3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+<li id="fn:3">
+<p>然後每隔一段時間就會遇到病人很理所當然的以為大家都會把病歷(出院摘要)上傳。愚か者よ...&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
 </li>
-<li id="fn-4">
-<p>關於我對印章與數位簽章的一些腦洞，請參見我的一個<a href="https://www.twitter.com/ChangYiYen/status/1010892720615796737">Twitter串</a>。&#160;<a class="footnote-backref" href="#fnref-4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+<li id="fn:4">
+<p>關於我對印章與數位簽章的一些腦洞，請參見我的一個<a href="https://www.twitter.com/ChangYiYen/status/1010892720615796737">Twitter串</a>。&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
 </li>
-<li id="fn-5">
-<p>參見https://dep.mohw.gov.tw/DOIM/cp-925-1251-114.html&#160;<a class="footnote-backref" href="#fnref-5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+<li id="fn:5">
+<p>參見https://dep.mohw.gov.tw/DOIM/cp-925-1251-114.html&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
 </li>
-<li id="fn-6">
-<p>雖然開一個全國數萬名醫師一同參與的簽章派對(key signing party)的想法真的很誘人。&#160;<a class="footnote-backref" href="#fnref-6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+<li id="fn:6">
+<p>雖然開一個全國數萬名醫師一同參與的簽章派對(key signing party)的想法真的很誘人。&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
 </li>
-<li id="fn-7">
-<p>PKI的概念在這篇文章的討論範圍之外，有興趣可先參考<a href="https://zh.wikipedia.org/zh-tw/%E5%85%AC%E9%96%8B%E9%87%91%E9%91%B0%E5%9F%BA%E7%A4%8E%E5%BB%BA%E8%A8%AD">維基百科</a>&#160;<a class="footnote-backref" href="#fnref-7" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+<li id="fn:7">
+<p>PKI的概念在這篇文章的討論範圍之外，有興趣可先參考<a href="https://zh.wikipedia.org/zh-tw/%E5%85%AC%E9%96%8B%E9%87%91%E9%91%B0%E5%9F%BA%E7%A4%8E%E5%BB%BA%E8%A8%AD">維基百科</a>&#160;<a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 7 in the text">&#8617;</a></p>
 </li>
-<li id="fn-8">
-<p>一個明顯的觀察是，若我們透過衛服部憑證中心查詢數位簽章的真實性，大可直接將「病人帶據稱是病歷的檔案來」的操作改為「電子病歷交換中心直接提供病歷」。這的確是事實，但我們進行這個思考實驗的目的是提供病人另一個傳遞病歷方式的選擇，而非要取代現有的，透過電子病歷交換中心提供的電子病歷。&#160;<a class="footnote-backref" href="#fnref-8" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+<li id="fn:8">
+<p>一個明顯的觀察是，若我們透過衛服部憑證中心查詢數位簽章的真實性，大可直接將「病人帶據稱是病歷的檔案來」的操作改為「電子病歷交換中心直接提供病歷」。這的確是事實，但我們進行這個思考實驗的目的是提供病人另一個傳遞病歷方式的選擇，而非要取代現有的，透過電子病歷交換中心提供的電子病歷。&#160;<a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 8 in the text">&#8617;</a></p>
 </li>
-<li id="fn-9">
-<p>若仔細看的話，蘋果的電子病歷系統雖然支援很多項目(例如生命徵象、疫苗注射紀錄、過敏紀錄和實驗室數據等)，但其實它不支援住院病歷的輸出，也因此在我們討論的範圍以外。&#160;<a class="footnote-backref" href="#fnref-9" title="Jump back to footnote 9 in the text">&#8617;</a></p>
+<li id="fn:9">
+<p>若仔細看的話，蘋果的電子病歷系統雖然支援很多項目(例如生命徵象、疫苗注射紀錄、過敏紀錄和實驗室數據等)，但其實它不支援住院病歷的輸出，也因此在我們討論的範圍以外。&#160;<a class="footnote-backref" href="#fnref:9" title="Jump back to footnote 9 in the text">&#8617;</a></p>
 </li>
-<li id="fn-10">
-<p>瀏覽器漏洞的例子實在不勝枚舉，若有興趣可以自行搜尋相關新聞。理論上，當拿到你手上的網頁檔案真的有問題時，數位簽章能夠確保你能找到當時簽章的人負責。理論上。簽章的人或機構可能會宣稱自己的系統被入侵，或是其實他們根本是故意的。誰知道。&#160;<a class="footnote-backref" href="#fnref-10" title="Jump back to footnote 10 in the text">&#8617;</a></p>
+<li id="fn:10">
+<p>瀏覽器漏洞的例子實在不勝枚舉，若有興趣可以自行搜尋相關新聞。理論上，當拿到你手上的網頁檔案真的有問題時，數位簽章能夠確保你能找到當時簽章的人負責。理論上。簽章的人或機構可能會宣稱自己的系統被入侵，或是其實他們根本是故意的。誰知道。&#160;<a class="footnote-backref" href="#fnref:10" title="Jump back to footnote 10 in the text">&#8617;</a></p>
 </li>
-<li id="fn-11">
-<p>若真的不想處理JavaScript這塊問題，一個方法是要求大家把瀏覽器的JavaScript引擎關掉，或安裝像NoScript這類的外掛。或是你夠硬核的話，可以用Lynx開這些網頁。&#160;<a class="footnote-backref" href="#fnref-11" title="Jump back to footnote 11 in the text">&#8617;</a></p>
+<li id="fn:11">
+<p>若真的不想處理JavaScript這塊問題，一個方法是要求大家把瀏覽器的JavaScript引擎關掉，或安裝像NoScript這類的外掛。或是你夠硬核的話，可以用Lynx開這些網頁。&#160;<a class="footnote-backref" href="#fnref:11" title="Jump back to footnote 11 in the text">&#8617;</a></p>
 </li>
-<li id="fn-12">
-<p>用手機看某些比較舊的網站(例如10-20年前設計的)，就大概知道我的意思。&#160;<a class="footnote-backref" href="#fnref-12" title="Jump back to footnote 12 in the text">&#8617;</a></p>
+<li id="fn:12">
+<p>用手機看某些比較舊的網站(例如10-20年前設計的)，就大概知道我的意思。&#160;<a class="footnote-backref" href="#fnref:12" title="Jump back to footnote 12 in the text">&#8617;</a></p>
 </li>
-<li id="fn-13">
-<p>這裡先不考慮光學文字辨識技術(optical character recognition, OCR)的應用，畢竟OCR的正確率也有限，並不是完美的解方。&#160;<a class="footnote-backref" href="#fnref-13" title="Jump back to footnote 13 in the text">&#8617;</a></p>
+<li id="fn:13">
+<p>這裡先不考慮光學文字辨識技術(optical character recognition, OCR)的應用，畢竟OCR的正確率也有限，並不是完美的解方。&#160;<a class="footnote-backref" href="#fnref:13" title="Jump back to footnote 13 in the text">&#8617;</a></p>
 </li>
-<li id="fn-14">
-<p>值得注意的是SQLcipher提供的是整個資料庫的加密，而非資料表或資料列層級的加密。&#160;<a class="footnote-backref" href="#fnref-14" title="Jump back to footnote 14 in the text">&#8617;</a></p>
+<li id="fn:14">
+<p>值得注意的是SQLcipher提供的是整個資料庫的加密，而非資料表或資料列層級的加密。&#160;<a class="footnote-backref" href="#fnref:14" title="Jump back to footnote 14 in the text">&#8617;</a></p>
 </li>
-<li id="fn-15">
-<p>除非病歷的各部份由不只一人負責，而(出自某些原因)每個部份都必須由不同人簽章時。&#160;<a class="footnote-backref" href="#fnref-15" title="Jump back to footnote 15 in the text">&#8617;</a></p>
+<li id="fn:15">
+<p>除非病歷的各部份由不只一人負責，而(出自某些原因)每個部份都必須由不同人簽章時。&#160;<a class="footnote-backref" href="#fnref:15" title="Jump back to footnote 15 in the text">&#8617;</a></p>
 </li>
-<li id="fn-16">
-<p>雖然「衛服部開設儲存庫給各院所fork，各院所再把更動推回衛服部」這想法的確蠻有趣的。&#160;<a class="footnote-backref" href="#fnref-16" title="Jump back to footnote 16 in the text">&#8617;</a></p>
+<li id="fn:16">
+<p>雖然「衛服部開設儲存庫給各院所fork，各院所再把更動推回衛服部」這想法的確蠻有趣的。&#160;<a class="footnote-backref" href="#fnref:16" title="Jump back to footnote 16 in the text">&#8617;</a></p>
 </li>
-<li id="fn-17">
-<p>[來源請求]&#160;<a class="footnote-backref" href="#fnref-17" title="Jump back to footnote 17 in the text">&#8617;</a></p>
+<li id="fn:17">
+<p>[來源請求]&#160;<a class="footnote-backref" href="#fnref:17" title="Jump back to footnote 17 in the text">&#8617;</a></p>
 </li>
-<li id="fn-18">
-<p>由於該作者的網站上提到他原本的設計有缺陷(有人可能會在簽名區塊以外放入另一個<html>元素)，我試著寫了個不完整的<a href="/extras/pagesign.m4">替代</a>，一方面也是因為自己想學學M4語言。&#160;<a class="footnote-backref" href="#fnref-18" title="Jump back to footnote 18 in the text">&#8617;</a></p>
+<li id="fn:18">
+<p>由於該作者的網站上提到他原本的設計有缺陷(有人可能會在簽名區塊以外放入另一個<html>元素)，我試著寫了個不完整的<a href="/extras/pagesign.m4">替代</a>，一方面也是因為自己想學學M4語言。&#160;<a class="footnote-backref" href="#fnref:18" title="Jump back to footnote 18 in the text">&#8617;</a></p>
 </li>
-<li id="fn-19">
-<p>使用PKI的問題在於我們是從「直接信任某方」改成「信任信任某方的第三方」。舉例來說，每當我們看到HTTPS加密的網站給出一個有效的憑證時，實際上發生的是，我們的瀏覽器會先跟它內建的憑證清單進行比對，看看這網站的憑證是否在清單裡，或是看這網站的憑證是否是由信任清單裡的CA簽章；若有效則信任這憑證。所以你變成在信任CA還有瀏覽器製造商而非網站本身。而且找CA簽章要錢。&#160;<a class="footnote-backref" href="#fnref-19" title="Jump back to footnote 19 in the text">&#8617;</a></p>
+<li id="fn:19">
+<p>使用PKI的問題在於我們是從「直接信任某方」改成「信任信任某方的第三方」。舉例來說，每當我們看到HTTPS加密的網站給出一個有效的憑證時，實際上發生的是，我們的瀏覽器會先跟它內建的憑證清單進行比對，看看這網站的憑證是否在清單裡，或是看這網站的憑證是否是由信任清單裡的CA簽章；若有效則信任這憑證。所以你變成在信任CA還有瀏覽器製造商而非網站本身。而且找CA簽章要錢。&#160;<a class="footnote-backref" href="#fnref:19" title="Jump back to footnote 19 in the text">&#8617;</a></p>
 </li>
-<li id="fn-20">
-<p>不過所謂樹大必有枯枝，人多必有XX，是不是每個有執照的人都能信任就不予置評了。&#160;<a class="footnote-backref" href="#fnref-20" title="Jump back to footnote 20 in the text">&#8617;</a></p>
+<li id="fn:20">
+<p>不過所謂樹大必有枯枝，人多必有XX，是不是每個有執照的人都能信任就不予置評了。&#160;<a class="footnote-backref" href="#fnref:20" title="Jump back to footnote 20 in the text">&#8617;</a></p>
 </li>
-<li id="fn-21">
-<p>不過我對人性的理解是，若病人下載到加密的病歷檔，病人要不是拿到檔案就立刻解密然後另存一份未解密的病歷檔，不然就是就醫時忘記解密密碼。&#160;<a class="footnote-backref" href="#fnref-21" title="Jump back to footnote 21 in the text">&#8617;</a></p>
+<li id="fn:21">
+<p>不過我對人性的理解是，若病人下載到加密的病歷檔，病人要不是拿到檔案就立刻解密然後另存一份未解密的病歷檔，不然就是就醫時忘記解密密碼。&#160;<a class="footnote-backref" href="#fnref:21" title="Jump back to footnote 21 in the text">&#8617;</a></p>
 </li>
-<li id="fn-22">
-<p>PDF也能鑲嵌檔案，但若鑲嵌檔案過大，可能會造成閱讀器意外的問題。反之，EPUB鑲嵌數百MB大小的影片並不罕見。&#160;<a class="footnote-backref" href="#fnref-22" title="Jump back to footnote 22 in the text">&#8617;</a></p>
+<li id="fn:22">
+<p>PDF也能鑲嵌檔案，但若鑲嵌檔案過大，可能會造成閱讀器意外的問題。反之，EPUB鑲嵌數百MB大小的影片並不罕見。&#160;<a class="footnote-backref" href="#fnref:22" title="Jump back to footnote 22 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
