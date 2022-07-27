@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Automated Pubmed searches </title>
+    <title>Automated PubMed searches </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="" />
     <meta name="author" content="Chang-Yi Yen" />
@@ -102,14 +102,18 @@
             <h1>
                 <a href=""
                         rel="bookmark"
-                        title="Permalink to Automated Pubmed searches">
-                        Automated Pubmed searches
+                        title="Permalink to Automated PubMed searches">
+                        Automated PubMed searches
                 </a>
             </h1>
         </header>
         <div class="entry-content">
 
-        <p>This has been done probably countless times before, but this is my (very rudimentary and totally insecure) take on automating PubMed searches, using the E-utilities API and wget/cURL/fetch. Note that it's probably a better idea to just use the EDirect utilities available for your platform, since they can pass data among each other without ad-hoc processing.)</p>
+        <p>This has been done probably countless times before, but <a href="https://github.com/changyiyen/scripts/blob/master/pubmed.sh">this</a> is my (very rudimentary and totally insecure) take on automating PubMed searches, using the E-utilities API and <code>wget</code>/<code>cURL</code>/<code>fetch</code>. Note that it's probably a better idea to just use the EDirect utilities available for your platform, since they can pipe data to each other without ad-hoc processing, and are designed to respect NCBI-imposed lookup rate limits. I wrote this partly as a very small exercise in <code>sh</code> scripting.</p>
+<p>This script relies on XMLStarlet (as the <code>xml</code> command) for parsing search results. It fetches the relevant article abstracts into a single file, then compresses it. It is meant to be run as a <code>cron</code> job, probably once daily.</p>
+<p>If you plan on using this script, please be sure to:
+1. change the result directory to whatever applies to your system, and
+2. change the search query terms as needed</p>
         </div><!-- /.entry-content -->
     </article>
 </section>
