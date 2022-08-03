@@ -113,7 +113,8 @@
 <p>This script relies on XMLStarlet (as the <code>xml</code> command) for parsing search results. It fetches the relevant article abstracts into a single file, then compresses it. It is meant to be run as a <code>cron</code> job, probably once daily.</p>
 <p>If you plan on using this script, please be sure to:
 1. change the result directory to whatever applies to your system, and
-2. change the search query terms as needed</p>
+2. change the search query terms as needed.</p>
+<p><em>Update 2022-08-03:</em> One of my colleagues asked me whether a version of this script is available for Windows, so I <a href="https://github.com/changyiyen/scripts/blob/master/pubmed.ps1">reimplemented</a> it in PowerShell. Since PowerShell can parse XML natively via the Select-Xml cmdlet, this script now has <em>no</em> dependencies.</p>
         </div><!-- /.entry-content -->
     </article>
 </section>
